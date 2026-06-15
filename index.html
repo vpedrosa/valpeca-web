@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valpeca</title>
+    <meta
+      name="description"
+      content="Valpeca — Administración y gestión de activos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- El CSS lo inyecta Vite desde el import en src/main.js (con hash de caché). -->
+  </head>
+  <body class="bg-black text-white antialiased">
+    <!-- Lienzo a pantalla completa para el shader -->
+    <div id="shader" class="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black"></div>
+
+    <!-- Contenido encima del shader -->
+    <main class="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
+      <h1
+        id="title"
+        class="cursor-default font-['Unica_One'] text-6xl tracking-widest sm:text-8xl"
+      >
+        VALPECA
+      </h1>
+      <p class="mt-4 max-w-md text-balance text-sm text-white/60 sm:text-base">
+        Administración y gestión de activos
+      </p>
+      <a
+        href="mailto:contacto@valpeca.com"
+        class="mt-6 text-sm text-white/80 transition-colors hover:text-white sm:text-base"
+      >
+        contacto@valpeca.com
+      </a>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
